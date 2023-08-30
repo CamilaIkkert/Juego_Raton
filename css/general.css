@@ -1,0 +1,68 @@
+/*//////////////////////////////////////////////// CSS general ///////////////////////////////////////////////////////////////*/
+/* font-family: 'Lora', serif;(Regular 400 Semi-bold 600 italic)
+font-family: 'Raleway', sans-serif;(Thin 100 Medium 500 italic)*/
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/casaRaton.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    color: rgba(255, 0, 0, 0.884);
+    line-height: 1.5em;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5em;
+    color: black;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-weight: Regular 400;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2em;
+    color: rgba(139, 0, 0, 0.726);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-weight: Semi-bold 600 italic;
+    text-transform: uppercase;
+}
+
+.section-game{
+    background-image: url(/img/fondoGame.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    width: 1000px;
+    height: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}

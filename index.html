@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAZA AL RATÓN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/bar.css">
+    <link rel="stylesheet" href="CSS/overlays.css">
+    <link rel="stylesheet" href="CSS/startScreen.css">
+    <script src="/JQuery/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <link rel="icon" href="/img/iconPage.ico">
+</head>
+<body>
+    <div id="startScreen">
+        <div class="startScreen__content">
+            <h1>CAZA AL RATÓN</h1>
+            <br>
+            <br>
+            <div class="startScreen__content__box" onclick="launchApplication()">
+                <h2 id="startButton">Empezar juego</h2>
+            </div>
+            <div class="startScreen__content__box" id="modeSelect">
+                <div class="arrow" id="prevMode">⏴</div>
+                <div class="selection">Fácil</div>
+                <div class="arrow" id="nextMode">⏵</div>  
+            </div>
+        </div>
+    </div>
+
+
+    <div id="background" class="background">
+
+        <div class="comboMessage"></div>
+
+
+        <div class="container">
+            <div class="barRow">
+                <div class="rowCell ammunitionCell" id="shots">
+                    <div class="ammunitionCell__info">
+                        <h2 id="ammunitionAmmount"></h2>
+                        
+        <div id="pointsCounter">
+            <h2 id="levelCount">1</h2>
+        </div>
+                    </div>
+                    <div class="ammunitionCell__gunIcon">
+                    </div>
+                </div>
+
+                <div class="rowCell" id="hit" style="width:40%;">
+                    <div class="lifesIcons">
+                        <img id="life1" src="/img/life.png" alt="">
+                        <img id="life2" src="/img/life.png" alt="">
+                        <img id="life3" src="/img/life.png" alt="">                            
+                    </div>
+                    <div class="progress">
+                        <div id="roundProgress" class="progress-bar progress-bar-striped active" role="progressbar"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                            0%
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rowCell scoreCell" id="score">
+                    <h2 id="scoreCount">0</h2>
+                    <h2>PUNTAJE</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="levelBox">
+        <h3 id="levelBoxP">Nivel</h3>
+    </div>
+
+    <div id="shootBlocker"></div>
+
+    <div id="overlay">
+        <div class="resultsBox">
+            <h3 style="color:rgb(114, 7, 21)">Perdiste!</h3>
+            <table>
+                <tr>
+                    <td>Puntaje</td>
+                    <td id="pointsSummary"></td>
+                </tr>
+                <tr>
+                    <td>Ronda</td>
+                    <td id="roundSummary"></td>
+                </tr>
+                <tr>
+                    <td>Aciertos</td>
+                    <td id="shotsSummary"></td>
+                </tr>
+
+            </table>
+
+            <h3 id="playAgainButton" class="cursorChange" onClick="window.location.reload()">Jugar otra vez</h3>
+        
+        </div>
+    </div>
+
+    <script src="JS/PointsHandler.js" defer="true"></script>
+    <script src="JS/MousesHandler.js" defer="true"></script>
+    <script src="JS/Mouse.js" defer="true"></script>
+    <script src="JS/View.js" defer="true"></script>
+    <script src="JS/ShotHandler.js" defer="true"></script>
+    <script src="JS/Game.js" defer="true"></script>
+    <script src="JS/StartScreen.js" defer="true"></script>
+    <script src="JS/Application.js" defer="true"></script>
+
+</body>
+</html>

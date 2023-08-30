@@ -1,0 +1,67 @@
+#overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/Score+GameOver.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+    text-align: center;
+    display: none;
+}
+
+.resultsBox{
+    position: relative;
+    top: 20%;
+    background-color: rgba(196, 196, 177, 0.822);
+    width: 80%; 
+    margin: auto;
+    padding: 2vw;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+#playAgainButton{
+    color: rgb(114, 7, 21);
+}
+
+#playAgainButton:hover{
+    color: rgb(212, 26, 26);
+}
+
+th{
+    color: black;
+    text-align: center;
+}
+
+tr{
+    color: black;
+    text-align: left;
+
+}
+
+td{
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-right: 2vw;
+}
+
+table{
+    width: 50%; margin: auto;
+    padding: 2vw;
+}
+
+#shootBlocker{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: block;
+}
+
+#shootBlocker:hover{
+    cursor: not-allowed;
+}

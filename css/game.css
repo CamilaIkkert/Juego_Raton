@@ -1,0 +1,29 @@
+.row1{
+    position: relative;
+    top:51rem;
+    right:22.5rem;
+}
+
+.scoreRow{
+    width:30%;
+}
+
+.row2{
+    font-size:3rem;
+    position: relative;
+    top:47rem;
+    left:45rem;
+}
+
+.lifesIcons img{
+    width: 32px;
+    height: 32px;
+}
+.duckImage{
+    float: left;
+    margin-top: 1vw;
+    width: 6.3%;
+    height: 20px;
+    background-image: url("../resources/sprites/scoreImages/hit/duckwhite.png");
+    background-size: 100% 100%;
+}

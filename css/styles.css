@@ -1,0 +1,90 @@
+body{
+    max-height: 100vh;
+    margin: 0;
+    user-select: none;
+    content: url("/img/mouseAliveLeft.png"), url("/img/mouseAliveRight.png"), url("/img/mouseDead.png") ;
+    cursor: crosshair;
+    background-image: url("/img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background { 
+    height: 100%; 
+    cursor: crosshair;
+}
+
+.mouse{
+    left: 48%;
+    bottom: 20%;
+    background-image: url("/img/mouseAliveLeft.png");
+    position: absolute;
+    animation-timing-function: linear;
+    width: 78px;
+    height: 73px;
+    background-size: 100%;
+}
+
+.comboMessage{
+    display: none;
+    z-index: 7;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    animation-name: flash;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    0% {color: red}
+    100% {color: black}
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    font-weight: 100;
+    color: rgba(255, 0, 0, 0.884);
+    line-height: 1.5em;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.5em;
+    color: black;
+}
+
+p {
+    font-family: 'Lora', serif;
+    font-weight: Regular 400;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+table {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: Semi-bold 600 italic;
+    text-transform: uppercase;
+}
