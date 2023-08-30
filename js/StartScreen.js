@@ -10,9 +10,9 @@ class StartScreen{
 
     initializeModes(){
         this.availableModes.push(
-            {name:"Facil", moves:7, ammunition:3, mouses:2},
-            {name:"Intermedio", moves:6, ammunition:5, mouses:3},
-            {name:"Dificil", moves:7, ammunition:50, mouses:1}
+            {name:"Facil", moves:7, ammunition:3, mouses:1},
+            {name:"Intermedio", moves:6, ammunition:5, mouses:2},
+            {name:"Dificil", moves:7, ammunition:50, mouses:3}
         )
     }
 
