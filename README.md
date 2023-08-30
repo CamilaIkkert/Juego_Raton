@@ -1,5 +1,7 @@
 # Atrapa al ratón
 
+# También se puede visualizar el juego desde : https://juego-raton.netlify.app/
+
 # Explicación archivos
 Juego realizado para la finalización del curso de JavaScript en CoderHouse.
 Este juego posee un sólo archivo HTML el cual se enlaza su estilo y su funcionalidad.
